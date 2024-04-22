@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFE71AB2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71AA2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift */; };
+		FAFE71AD2BD6D0E900DB24EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71AC2BD6D0E900DB24EB /* ContentView.swift */; };
+		FAFE71AF2BD6D0EA00DB24EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE71AE2BD6D0EA00DB24EB /* Assets.xcassets */; };
+		FAFE71B32BD6D0EA00DB24EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE71B22BD6D0EA00DB24EB /* Preview Assets.xcassets */; };
+		FAFE71BD2BD6D0EA00DB24EB /* SwiftUI_AI_Voice_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71BC2BD6D0EA00DB24EB /* SwiftUI_AI_Voice_AssistantTests.swift */; };
+		FAFE71C72BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71C62BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITests.swift */; };
+		FAFE71C92BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71C82BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAFE71B92BD6D0EA00DB24EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFE719F2BD6D0E900DB24EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFE71A62BD6D0E900DB24EB;
+			remoteInfo = "SwiftUI AI Voice Assistant";
+		};
+		FAFE71C32BD6D0EB00DB24EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFE719F2BD6D0E900DB24EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFE71A62BD6D0E900DB24EB;
+			remoteInfo = "SwiftUI AI Voice Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAFE71A72BD6D0E900DB24EB /* SwiftUI AI Voice Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI AI Voice Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE71AA2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AI_Voice_AssistantApp.swift; sourceTree = "<group>"; };
+		FAFE71AC2BD6D0E900DB24EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAFE71AE2BD6D0EA00DB24EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFE71B02BD6D0EA00DB24EB /* SwiftUI_AI_Voice_Assistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_AI_Voice_Assistant.entitlements; sourceTree = "<group>"; };
+		FAFE71B22BD6D0EA00DB24EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAFE71B82BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI AI Voice AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE71BC2BD6D0EA00DB24EB /* SwiftUI_AI_Voice_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AI_Voice_AssistantTests.swift; sourceTree = "<group>"; };
+		FAFE71C22BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI AI Voice AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE71C62BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AI_Voice_AssistantUITests.swift; sourceTree = "<group>"; };
+		FAFE71C82BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AI_Voice_AssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFE71A42BD6D0E900DB24EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE71B52BD6D0EA00DB24EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE71BF2BD6D0EB00DB24EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFE719E2BD6D0E900DB24EB = {
+			isa = PBXGroup;
+			children = (
+				FAFE71A92BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */,
+				FAFE71BB2BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests */,
+				FAFE71C52BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests */,
+				FAFE71A82BD6D0E900DB24EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFE71A82BD6D0E900DB24EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71A72BD6D0E900DB24EB /* SwiftUI AI Voice Assistant.app */,
+				FAFE71B82BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests.xctest */,
+				FAFE71C22BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFE71A92BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71D52BD6D23800DB24EB /* App */,
+				FAFE71D92BD6D25D00DB24EB /* Models */,
+				FAFE71D82BD6D24D00DB24EB /* ViewModels */,
+				FAFE71D72BD6D24700DB24EB /* Views */,
+				FAFE71D62BD6D23F00DB24EB /* Resources */,
+				FAFE71B02BD6D0EA00DB24EB /* SwiftUI_AI_Voice_Assistant.entitlements */,
+				FAFE71B12BD6D0EA00DB24EB /* Preview Content */,
+			);
+			path = "SwiftUI AI Voice Assistant";
+			sourceTree = "<group>";
+		};
+		FAFE71B12BD6D0EA00DB24EB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71B22BD6D0EA00DB24EB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAFE71BB2BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71BC2BD6D0EA00DB24EB /* SwiftUI_AI_Voice_AssistantTests.swift */,
+			);
+			path = "SwiftUI AI Voice AssistantTests";
+			sourceTree = "<group>";
+		};
+		FAFE71C52BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71C62BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITests.swift */,
+				FAFE71C82BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITestsLaunchTests.swift */,
+			);
+			path = "SwiftUI AI Voice AssistantUITests";
+			sourceTree = "<group>";
+		};
+		FAFE71D52BD6D23800DB24EB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71AA2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAFE71D62BD6D23F00DB24EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71AE2BD6D0EA00DB24EB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAFE71D72BD6D24700DB24EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE71AC2BD6D0E900DB24EB /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAFE71D82BD6D24D00DB24EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FAFE71D92BD6D25D00DB24EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFE71A62BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE71CC2BD6D0EB00DB24EB /* Build configuration list for PBXNativeTarget "SwiftUI AI Voice Assistant" */;
+			buildPhases = (
+				FAFE71A32BD6D0E900DB24EB /* Sources */,
+				FAFE71A42BD6D0E900DB24EB /* Frameworks */,
+				FAFE71A52BD6D0E900DB24EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI AI Voice Assistant";
+			productName = "SwiftUI AI Voice Assistant";
+			productReference = FAFE71A72BD6D0E900DB24EB /* SwiftUI AI Voice Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAFE71B72BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE71CF2BD6D0EB00DB24EB /* Build configuration list for PBXNativeTarget "SwiftUI AI Voice AssistantTests" */;
+			buildPhases = (
+				FAFE71B42BD6D0EA00DB24EB /* Sources */,
+				FAFE71B52BD6D0EA00DB24EB /* Frameworks */,
+				FAFE71B62BD6D0EA00DB24EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFE71BA2BD6D0EA00DB24EB /* PBXTargetDependency */,
+			);
+			name = "SwiftUI AI Voice AssistantTests";
+			productName = "SwiftUI AI Voice AssistantTests";
+			productReference = FAFE71B82BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAFE71C12BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE71D22BD6D0EB00DB24EB /* Build configuration list for PBXNativeTarget "SwiftUI AI Voice AssistantUITests" */;
+			buildPhases = (
+				FAFE71BE2BD6D0EB00DB24EB /* Sources */,
+				FAFE71BF2BD6D0EB00DB24EB /* Frameworks */,
+				FAFE71C02BD6D0EB00DB24EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFE71C42BD6D0EB00DB24EB /* PBXTargetDependency */,
+			);
+			name = "SwiftUI AI Voice AssistantUITests";
+			productName = "SwiftUI AI Voice AssistantUITests";
+			productReference = FAFE71C22BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFE719F2BD6D0E900DB24EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					FAFE71A62BD6D0E900DB24EB = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					FAFE71B72BD6D0EA00DB24EB = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = FAFE71A62BD6D0E900DB24EB;
+					};
+					FAFE71C12BD6D0EB00DB24EB = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = FAFE71A62BD6D0E900DB24EB;
+					};
+				};
+			};
+			buildConfigurationList = FAFE71A22BD6D0E900DB24EB /* Build configuration list for PBXProject "SwiftUI AI Voice Assistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFE719E2BD6D0E900DB24EB;
+			productRefGroup = FAFE71A82BD6D0E900DB24EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFE71A62BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */,
+				FAFE71B72BD6D0EA00DB24EB /* SwiftUI AI Voice AssistantTests */,
+				FAFE71C12BD6D0EB00DB24EB /* SwiftUI AI Voice AssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFE71A52BD6D0E900DB24EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE71B32BD6D0EA00DB24EB /* Preview Assets.xcassets in Resources */,
+				FAFE71AF2BD6D0EA00DB24EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE71B62BD6D0EA00DB24EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE71C02BD6D0EB00DB24EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFE71A32BD6D0E900DB24EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE71AD2BD6D0E900DB24EB /* ContentView.swift in Sources */,
+				FAFE71AB2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE71B42BD6D0EA00DB24EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE71BD2BD6D0EA00DB24EB /* SwiftUI_AI_Voice_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFE71BE2BD6D0EB00DB24EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE71C92BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITestsLaunchTests.swift in Sources */,
+				FAFE71C72BD6D0EB00DB24EB /* SwiftUI_AI_Voice_AssistantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAFE71BA2BD6D0EA00DB24EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFE71A62BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */;
+			targetProxy = FAFE71B92BD6D0EA00DB24EB /* PBXContainerItemProxy */;
+		};
+		FAFE71C42BD6D0EB00DB24EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFE71A62BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */;
+			targetProxy = FAFE71C32BD6D0EB00DB24EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAFE71CA2BD6D0EB00DB24EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAFE71CB2BD6D0EB00DB24EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FAFE71CD2BD6D0EB00DB24EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI AI Voice Assistant/SwiftUI_AI_Voice_Assistant.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI AI Voice Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UN46XANF2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFE71CE2BD6D0EB00DB24EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI AI Voice Assistant/SwiftUI_AI_Voice_Assistant.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI AI Voice Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UN46XANF2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAFE71D02BD6D0EB00DB24EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN46XANF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI AI Voice Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI AI Voice Assistant";
+			};
+			name = Debug;
+		};
+		FAFE71D12BD6D0EB00DB24EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN46XANF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI AI Voice Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI AI Voice Assistant";
+			};
+			name = Release;
+		};
+		FAFE71D32BD6D0EB00DB24EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN46XANF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SwiftUI AI Voice Assistant";
+			};
+			name = Debug;
+		};
+		FAFE71D42BD6D0EB00DB24EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UN46XANF2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SwiftUI AI Voice Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFE71A22BD6D0E900DB24EB /* Build configuration list for PBXProject "SwiftUI AI Voice Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE71CA2BD6D0EB00DB24EB /* Debug */,
+				FAFE71CB2BD6D0EB00DB24EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE71CC2BD6D0EB00DB24EB /* Build configuration list for PBXNativeTarget "SwiftUI AI Voice Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE71CD2BD6D0EB00DB24EB /* Debug */,
+				FAFE71CE2BD6D0EB00DB24EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE71CF2BD6D0EB00DB24EB /* Build configuration list for PBXNativeTarget "SwiftUI AI Voice AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE71D02BD6D0EB00DB24EB /* Debug */,
+				FAFE71D12BD6D0EB00DB24EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE71D22BD6D0EB00DB24EB /* Build configuration list for PBXNativeTarget "SwiftUI AI Voice AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE71D32BD6D0EB00DB24EB /* Debug */,
+				FAFE71D42BD6D0EB00DB24EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFE719F2BD6D0E900DB24EB /* Project object */;
+}
