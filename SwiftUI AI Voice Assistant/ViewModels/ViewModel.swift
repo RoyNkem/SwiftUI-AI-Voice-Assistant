@@ -14,7 +14,7 @@ import XCAOpenAIClient //communicate with openAI APIs
 @Observable
 class ViewModel: NSObject {
     
-    let client = OpenAIClient(apiKey: Constants.apiKey) //key stored in env var
+    let client = OpenAIClient(apiKey: Constants.api) //key stored in env var
     
     var selectedVoice: VoiceType = .alloy
     var state: VoiceChatState = .idle {
