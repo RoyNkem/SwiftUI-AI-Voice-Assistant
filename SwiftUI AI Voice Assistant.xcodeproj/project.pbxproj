@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0261BE2BD91E6A00DC191F /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = FA0261BD2BD91E6A00DC191F /* SiriWaveView */; };
+		FA0261C12BD922C600DC191F /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = FA0261C02BD922C600DC191F /* XCAOpenAIClient */; };
 		FAFE71AB2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71AA2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift */; };
 		FAFE71AD2BD6D0E900DB24EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71AC2BD6D0E900DB24EB /* ContentView.swift */; };
 		FAFE71AF2BD6D0EA00DB24EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE71AE2BD6D0EA00DB24EB /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0261C12BD922C600DC191F /* XCAOpenAIClient in Frameworks */,
+				FA0261BE2BD91E6A00DC191F /* SiriWaveView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +189,10 @@
 			dependencies = (
 			);
 			name = "SwiftUI AI Voice Assistant";
+			packageProductDependencies = (
+				FA0261BD2BD91E6A00DC191F /* SiriWaveView */,
+				FA0261C02BD922C600DC191F /* XCAOpenAIClient */,
+			);
 			productName = "SwiftUI AI Voice Assistant";
 			productReference = FAFE71A72BD6D0E900DB24EB /* SwiftUI AI Voice Assistant.app */;
 			productType = "com.apple.product-type.application";
@@ -257,6 +265,10 @@
 				Base,
 			);
 			mainGroup = FAFE719E2BD6D0E900DB24EB;
+			packageReferences = (
+				FA0261BC2BD91E6A00DC191F /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+				FA0261BF2BD922C600DC191F /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */,
+			);
 			productRefGroup = FAFE71A82BD6D0E900DB24EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -472,12 +484,12 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-Assistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -510,12 +522,12 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Tenduts.SwiftUI-AI-Voice-Assistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -657,6 +669,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA0261BC2BD91E6A00DC191F /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FA0261BF2BD922C600DC191F /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAOpenAIClient";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA0261BD2BD91E6A00DC191F /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA0261BC2BD91E6A00DC191F /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+		FA0261C02BD922C600DC191F /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA0261BF2BD922C600DC191F /* XCRemoteSwiftPackageReference "XCAOpenAIClient" */;
+			productName = XCAOpenAIClient;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAFE719F2BD6D0E900DB24EB /* Project object */;
 }
