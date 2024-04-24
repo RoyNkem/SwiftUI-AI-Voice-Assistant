@@ -7,8 +7,6 @@
 
 import Foundation
 
-// sk-proj-YSzTMRuBilM96se0IDkaT3BlbkFJuKl6iuFY9Wv0qLKhWzpg
-
 struct Constants {
     
     
