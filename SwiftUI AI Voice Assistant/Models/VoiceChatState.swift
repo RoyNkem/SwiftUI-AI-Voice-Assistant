@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+enum VoiceChatState {
+    case idle, recordingSpeech, processingSpeech, playingSpeech, error(Error)
+}
+
