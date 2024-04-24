@@ -10,5 +10,7 @@ import Foundation
 //sk-proj-UQQfrvxEidL4nukFJk2vT3BlbkFJRiO4W4KmztcoiPdSv92C
 
 struct Constants {
-    static let apiKey = "sk-proj-UQQfrvxEidL4nukFJk2vT3BlbkFJRiO4W4KmztcoiPdSv92C"
+    
+    static let apiKey = ProcessInfo.processInfo.environment["sk-proj-UQQfrvxEidL4nukFJk2vT3BlbkFJRiO4W4KmztcoiPdSv92C"]
+
 }
