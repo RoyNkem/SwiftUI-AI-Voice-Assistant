@@ -26,7 +26,7 @@ To run the app, you'll need the following:
 4. Replace `OPENAI_API_KEY` in the Constants struct with your actual OpenAI API Key.
    ```swift
    struct Constants {
-       static let openAIKey = "OPENAI_API_KEY"
+       static let apiKey = "OPENAI_API_KEY"
    }
 5. Build and run the project on your desired platform (iOS, macOS, or visionOS).
 
