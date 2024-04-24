@@ -16,14 +16,19 @@ To run the app, you'll need the following:
 - iOS 17 or later
 - macOS 14 or later
 - visionOS 1.0 or later
-- OpenAI API Key for accessing GPT4, Whisper, and TTS functionalities
+- [OpenAI API Key](https://platform.openai.com/api-keys) for accessing GPT4, Whisper, and TTS functionalities
 
 ## Installation
 
 1. Clone this repository to your local machine.
 2. Open the project in Xcode.
-3. Replace `YOUR_OPENAI_API_KEY` in the code with your actual OpenAI API Key.
-4. Build and run the project on your desired platform (iOS, macOS, or visionOS).
+3. Open the `Constants.swift` file located in the `Shared` folder.
+4. Replace `YOUR_OPENAI_API_KEY` in the Constants struct with your actual OpenAI API Key.
+   ```swift
+   struct Constants {
+       static let openAIKey = "YOUR_OPENAI_API_KEY"
+   }
+5. Build and run the project on your desired platform (iOS, macOS, or visionOS).
 
 ## Usage
 
