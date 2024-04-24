@@ -1,0 +1,29 @@
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Swift environment
+        uses: actions/setup-swift@v2
+        with:
+          swift-version: '5.5'  # Adjust the Swift version as needed
+
+      - name: Set up environment variables
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+
+      - name: Build Swift Package
+        run: swift build
+
+      - name: Run Swift Package Tests
+        run: swift test
