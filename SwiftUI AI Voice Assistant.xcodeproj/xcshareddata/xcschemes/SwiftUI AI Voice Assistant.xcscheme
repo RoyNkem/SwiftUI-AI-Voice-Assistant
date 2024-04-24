@@ -82,13 +82,6 @@
             ReferencedContainer = "container:SwiftUI AI Voice Assistant.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OPENAI_API_KEY"
-            value = "sk-proj-YSzTMRuBilM96se0IDkaT3BlbkFJuKl6iuFY9Wv0qLKhWzpg"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

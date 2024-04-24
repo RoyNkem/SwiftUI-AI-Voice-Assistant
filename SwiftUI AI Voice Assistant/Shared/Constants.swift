@@ -11,12 +11,14 @@ import Foundation
 
 struct Constants {
     
-    static var apiKey: String {
-        guard let apiKey = ProcessInfo.processInfo.environment["OPENAI_API_KEY"] else {
-            fatalError("OpenAI API Key not found in environment variables")
-        }
-        
-        return apiKey
-    }
+    static var apiKey = "sk-proj-YSzTMRuBilM96se0IDkaT3BlbkFJuKl6iuFY9Wv0qLKhWzpg"
+    
+//    static var apiKey: String {
+//        guard let apiKey = ProcessInfo.processInfo.environment["OPENAI_API_KEY"] else {
+//            fatalError("OpenAI API Key not found in environment variables")
+//        }
+//        
+//        return apiKey
+//    }
 }
 
