@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		FA0261BE2BD91E6A00DC191F /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = FA0261BD2BD91E6A00DC191F /* SiriWaveView */; };
 		FA0261C12BD922C600DC191F /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = FA0261C02BD922C600DC191F /* XCAOpenAIClient */; };
+		FA1D200C2BD9674C002AE94C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D200B2BD9674C002AE94C /* ViewModel.swift */; };
+		FA1D200E2BD9675C002AE94C /* VoiceChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D200D2BD9675C002AE94C /* VoiceChatState.swift */; };
+		FA1D20102BD96765002AE94C /* VoiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D200F2BD96765002AE94C /* VoiceType.swift */; };
+		FA1D20132BD967C7002AE94C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1D20122BD967C7002AE94C /* Constants.swift */; };
 		FAFE71AB2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71AA2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift */; };
 		FAFE71AD2BD6D0E900DB24EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFE71AC2BD6D0E900DB24EB /* ContentView.swift */; };
 		FAFE71AF2BD6D0EA00DB24EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE71AE2BD6D0EA00DB24EB /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA1D200B2BD9674C002AE94C /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FA1D200D2BD9675C002AE94C /* VoiceChatState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceChatState.swift; sourceTree = "<group>"; };
+		FA1D200F2BD96765002AE94C /* VoiceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceType.swift; sourceTree = "<group>"; };
+		FA1D20122BD967C7002AE94C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FAFE71A72BD6D0E900DB24EB /* SwiftUI AI Voice Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI AI Voice Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFE71AA2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AI_Voice_AssistantApp.swift; sourceTree = "<group>"; };
 		FAFE71AC2BD6D0E900DB24EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA1D20112BD967C7002AE94C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D20122BD967C7002AE94C /* Constants.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		FAFE719E2BD6D0E900DB24EB = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 		FAFE71A92BD6D0E900DB24EB /* SwiftUI AI Voice Assistant */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D20112BD967C7002AE94C /* Shared */,
 				FAFE71D52BD6D23800DB24EB /* App */,
 				FAFE71D92BD6D25D00DB24EB /* Models */,
 				FAFE71D82BD6D24D00DB24EB /* ViewModels */,
@@ -162,6 +179,7 @@
 		FAFE71D82BD6D24D00DB24EB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D200B2BD9674C002AE94C /* ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -169,6 +187,8 @@
 		FAFE71D92BD6D25D00DB24EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FA1D200F2BD96765002AE94C /* VoiceType.swift */,
+				FA1D200D2BD9675C002AE94C /* VoiceChatState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -312,7 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFE71AD2BD6D0E900DB24EB /* ContentView.swift in Sources */,
+				FA1D20102BD96765002AE94C /* VoiceType.swift in Sources */,
+				FA1D200C2BD9674C002AE94C /* ViewModel.swift in Sources */,
+				FA1D200E2BD9675C002AE94C /* VoiceChatState.swift in Sources */,
 				FAFE71AB2BD6D0E900DB24EB /* SwiftUI_AI_Voice_AssistantApp.swift in Sources */,
+				FA1D20132BD967C7002AE94C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,34 @@ import XCAOpenAIClient //communicate with openAI APIs
 @Observable
 class ViewModel: NSObject {
     
-    let client = OpenAIClient(apiKey: Constants.apiKey) //key stored in env
+    let client = OpenAIClient(apiKey: Constants.apiKey) //key stored in env var
     
+    var selectedVoice: VoiceType = .alloy
+    var state: VoiceChatState = .idle {
+        didSet { print( state )}
+    }
     
+    var isIdle: Bool {
+        if case .idle = state { //pattern matching
+            return true
+        }
+        return false
+    }
+    
+    var audioPower: CGFloat = 0.0
+    var siriWaveFormOpacity: CGFloat = 0.0
+    
+    func startCaptureAudio() {
+        
+    }
+    
+    func cancelProcessingTask() {
+        
+        
+    }
+    
+    func cancelRecording() {
+        
+    }
+ 
 }

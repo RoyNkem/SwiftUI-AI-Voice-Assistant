@@ -7,16 +7,10 @@
 
 import Foundation
 
-enum VoiceType {
+enum VoiceType: String {
     case alloy, echo, fable, onyx, nova, shimmer
 }
 
-
-
-//MARK: - String
-//extension VoiceType: String {
-//    
-//}
 
 //MARK: - Codable
 extension VoiceType: Codable {
