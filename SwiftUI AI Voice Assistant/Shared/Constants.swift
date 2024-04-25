@@ -8,8 +8,7 @@
 import Foundation
 
 struct Constants {
-    
-    
+        
     static var apiKey: String {
         guard let apiKey = ProcessInfo.processInfo.environment["OPENAI_API_KEY"] else {
             fatalError("OpenAI API Key not found in environment variables")

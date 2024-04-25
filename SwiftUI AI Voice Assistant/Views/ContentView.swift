@@ -20,7 +20,7 @@ struct ContentView: View {
             
             Spacer()
             SiriWaveView()
-                .power(power: vm.audioPower)
+                .power(power: vm.audioPower ?? 0)
                 .opacity(vm.siriWaveFormOpacity)
                 .frame(height: 25)
                 .overlay {
@@ -28,6 +28,9 @@ struct ContentView: View {
                 }
             Spacer()
             
+            
+            //buttons under the siri wave form (conditionally appears
+            //based on state
             switch vm.state {
             case .recordingSpeech:
                 cancelRecordingButton
@@ -65,12 +68,13 @@ struct ContentView: View {
         switch vm.state {
         case .idle, .error:
             startCaptureButton
-        case .processingSpeech:
+        case .processingSpeech: //when the AI begins to synthesize voice input
             animatedButton
-        default: EmptyView()
+        default: EmptyView() //when AI is getting input & giving output response show wave form: playingSpeech, recordingSpeech
         }
     }
     
+    //MARK: - animatedButtom
     @ViewBuilder
     private var animatedButton: some View {
         Image(systemName: "brain")
@@ -79,6 +83,13 @@ struct ContentView: View {
                 options: .repeating,
                 value: isSymbolAnimating
             )
+            .font(.system(size: 128))
+            .onAppear {
+                isSymbolAnimating = true
+            }
+            .onDisappear {
+                isSymbolAnimating = false
+            }
     }
     
     //MARK: - startCaptureButton
@@ -115,7 +126,7 @@ struct ContentView: View {
             
         }) {
             
-            Image(systemName: "mark.circle.fill")
+            Image(systemName: "xmark.circle.fill")
                 .symbolRenderingMode(.multicolor)
                 .font(.system(size: 44))
         }
@@ -124,6 +135,9 @@ struct ContentView: View {
 }
 
 #Preview("Processing Speech") {
-    return ContentView()
+    let vm = ViewModel()
+    vm.state = .playingSpeech
+    vm.audioPower = 0.3
+    return ContentView(vm: vm).preferredColorScheme(.dark)
     
 }
