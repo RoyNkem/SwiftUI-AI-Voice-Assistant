@@ -16,8 +16,8 @@ class ViewModel: NSObject {
     
     let client = OpenAIClient(apiKey: Constants.apiKey) //key stored in env var
     
-    var audioplayer: AVAudioPlayer!
-    var audioRecorder: AVAudioRecorder!
+    private var audioplayer: AVAudioPlayer!
+    private var audioRecorder: AVAudioRecorder!
     
     //for visionOS and iOS
 #if !os(macOS)
@@ -28,9 +28,9 @@ class ViewModel: NSObject {
     var animationTimer: Timer?
     var recordingTimer: Timer?
     var audioPower: CGFloat?
-    var prevAudioPower: Double?
     var selectedVoice: VoiceType = .alloy
-    var processingSpeechTask: Task<Void, Never>?
+    private var prevAudioPower: Double?
+    private var processingSpeechTask: Task<Void, Never>?
     
     var state: VoiceChatState = .idle {
         didSet { print( state )}
@@ -51,7 +51,7 @@ class ViewModel: NSObject {
         }
     }
     
-    var captureURL: URL {
+    private var captureURL: URL {
         FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
             .first!.appendingPathExtension("recording.m4a")
     }
@@ -81,51 +81,22 @@ class ViewModel: NSObject {
     }
     
     func startCaptureAudio() {
-        print("start audio capture")
+        guard audioRecorder == nil else {
+            state = .error("Audio recorder is already active")
+            return
+        }
         resetValues()
         state = .recordingSpeech
+        
         do {
             audioRecorder = try AVAudioRecorder(
                 url: captureURL,
-                settings: [
-                    AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                    AVSampleRateKey: 12000,
-                    AVNumberOfChannelsKey: 1,
-                    AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-                ]
+                settings: audioSettings()
             )
             audioRecorder.isMeteringEnabled = true
             audioRecorder.delegate = self
             audioRecorder.record()
-            
-            print("start animationTimer")
-            animationTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { [unowned self] _ in
-                print("start animationTimer now")
-                guard self.audioRecorder != nil else { return }
-                self.audioRecorder.updateMeters()
-                let power = min(1, max(0, 1 - abs(Double(self.audioRecorder.averagePower(forChannel: 0)) / 50)))
-                self.audioPower = power
-            })
-            
-            recordingTimer = Timer.scheduledTimer(withTimeInterval: 1.6, repeats: true, block: { [unowned self] _ in
-                print("start recordingTimer now")
-                guard self.audioRecorder != nil else { return }
-                self.audioRecorder.updateMeters()
-                let power = min(1, max(0, 1 - abs(Double(self.audioRecorder.averagePower(forChannel: 0)) / 50)))
-
-                if self.prevAudioPower == nil {
-                    print("prevAudioPower: \(String(describing: prevAudioPower))")
-                    self.prevAudioPower = power
-                    return
-                }
-                
-                if let prevAudioPower = self.prevAudioPower, prevAudioPower < 0.3 && power < 0.25 {
-                    self.finishCaptureAudio() //start processing audio when the audiopower is less than threshold
-                    print("Should start playing back")
-                }
-                
-                self.prevAudioPower = power
-            })
+            startTimers() //animation Timer and recording timer
             
         } catch {
             resetValues()
@@ -145,7 +116,7 @@ class ViewModel: NSObject {
         state = .idle
     }
     
-    //MARK: - Helper Methods: finishCaptureAudio, playAudio,
+    //MARK: - Helper Methods: finishCaptureAudio
     
     private func finishCaptureAudio() {
         resetValues()
@@ -159,6 +130,7 @@ class ViewModel: NSObject {
         }
     }
     
+    //MARK: - processingSpeechTask(audioData:)
     private func processingSpeechTask(audioData: Data) -> Task<Void, Never> {
         Task { @MainActor [unowned self] in
             do {
@@ -179,13 +151,13 @@ class ViewModel: NSObject {
                 
             } catch {
                 if Task.isCancelled { return }
-                state = .error(error)
+                state = .error(error.localizedDescription)
                 resetValues()
             }
         }
     }
     
-    //test playback
+    //MARK: - playAudio(data:)
     private func playAudio(data: Data) throws {
         self.state = .playingSpeech
         audioplayer = try AVAudioPlayer(data: data)
@@ -201,6 +173,49 @@ class ViewModel: NSObject {
         })
     }
     
+    //MARK: - startTimers()
+    private func startTimers() {
+        animationTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true, block: { [unowned self] _ in
+            print("start animationTimer now")
+            guard self.audioRecorder != nil else { return }
+            self.audioRecorder.updateMeters()
+            let power = min(1, max(0, 1 - abs(Double(self.audioRecorder.averagePower(forChannel: 0)) / 50)))
+            self.audioPower = power
+        })
+        
+        recordingTimer = Timer.scheduledTimer(withTimeInterval: 1.6, repeats: true, block: { [unowned self] _ in
+            print("start recordingTimer now")
+            guard self.audioRecorder != nil else { return }
+            self.audioRecorder.updateMeters()
+            let power = min(1, max(0, 1 - abs(Double(self.audioRecorder.averagePower(forChannel: 0)) / 50)))
+            
+            self.handlePowerChange(power)
+        })
+    }
+    
+    //MARK: - audioSettings()
+    private func audioSettings() -> [String: Any] {
+        [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+    }
+    
+    //MARK: - handlePowerChange(_:)
+    private func handlePowerChange(_ power: Double) {
+        if prevAudioPower == 0 {
+            prevAudioPower = power
+            return
+        }
+        if let prevAudioPower = prevAudioPower, prevAudioPower < 0.3 && power < 0.25 {
+            finishCaptureAudio()
+        }
+        prevAudioPower = power
+    }
+    
+    //MARK: - resetValues()
     private func resetValues() {
         audioPower = 0
         prevAudioPower = 0
@@ -217,7 +232,7 @@ class ViewModel: NSObject {
 
 
 
-//MARK: -
+//MARK: - AVAudioRecorderDelegate
 extension ViewModel: AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if !flag {
@@ -227,7 +242,7 @@ extension ViewModel: AVAudioRecorderDelegate {
     }
 }
 
-//MARK: -
+//MARK: - AVAudioPlayerDelegate
 extension ViewModel: AVAudioPlayerDelegate {
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         //when chatGPT finishes playing
